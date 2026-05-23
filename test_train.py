@@ -68,7 +68,7 @@ elif SCHEDULER_TYPE == 'Exponential':
 loss_fn = nn.op.MultiCrossEntropyLoss(model=model, max_classes=train_labs.max()+1)
 
 # 训练模型
-save_name = f"best_models_{MODEL_TYPE}_{OPTIMIZER_TYPE}_LR{INIT_LR}_{SCHEDULER_TYPE}"
+save_name = f"best_model_{MODEL_TYPE}_{OPTIMIZER_TYPE}_LR{INIT_LR}_{SCHEDULER_TYPE}"
 runner = nn.runner.RunnerM(model, optimizer, nn.metric.accuracy, loss_fn, scheduler=scheduler)
 runner.train([train_imgs, train_labs], [valid_imgs, valid_labs], num_epochs=5, log_iters=100, save_name=save_name)
 
