@@ -4,8 +4,6 @@
 
 本项目是《神经网络与深度学习》课程的 Project-1，目标是依靠 Python 和科学计算库 NumPy，从底层推导并构建简单的深度学习框架（内置于 `mynn` 模块），并在 MNIST 手写数字数据集上完成图像分类、模型对比、优化器测试及特征可视化任务。
 
----
-
 ## 项目结构 (Repository Structure)
 
 ```text
@@ -32,8 +30,6 @@
 └── README.md                          # 项目说明文档
 ```
 
----
-
 ## 环境依赖 (Requirements)
 
 本项目轻量，使用 Python 3.8+，可直接用 CPU 运行。
@@ -41,8 +37,6 @@
 ```bash
 pip install numpy matplotlib
 ```
-
----
 
 ## 代码运行 (Running Codes)
 
